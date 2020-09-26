@@ -19,8 +19,8 @@
 menu:
   Home: /
   Archives: /archives
-  Tags: /tags
-  Categories: /categories
+  # Tags: /tags
+  # Categories: /categories
   #XXX: /xxx
 
 # Favicon
@@ -131,7 +131,7 @@ cdn:
 # ---------------
 avatar:
 
-top_img: true # false or url of img
+top_img: img/topimg.jpg # false or url of img
 
 top_img_height: 60 # best range: 60 - 100
 
