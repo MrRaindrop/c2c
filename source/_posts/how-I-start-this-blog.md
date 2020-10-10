@@ -78,6 +78,24 @@ nginx -s stop
 nginx -c /etc/nginx/nginx.conf
 ```
 
+如果上述命令报错了：
+
+```
+nginx: [error] invalid PID number "" in "/run/nginx.pid"
+```
+
+我们可以先杀掉 nginx 进程再手动重启它. 先通过以下命令找到 pid:
+
+```
+$ ps -ef|grep nginx
+```
+
+再强杀掉进程：
+
+```
+$ kill -9 [pid]
+```
+
 在网页端访问 403 了？
 
 1. 将 hexo public 目录设置权限为 777： chmod -R hexoRoot
